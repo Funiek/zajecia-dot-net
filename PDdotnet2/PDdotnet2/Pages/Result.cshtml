@@ -1,0 +1,32 @@
+﻿@page
+@model PDdotnet2.Pages.ResultModel
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Wynik</title>
+</head>
+<body>
+    <h1>Wyniki</h1>
+    <div class="form-text-color">
+        Twoje dane: <br />
+        Imię: @Model.imie <br />
+        Email: @Model.email <br />
+        Wiek: @Model.wiek <br /> 
+        Płeć: @Model.plec <br />
+        BMI: @Model.BMI <br />
+        Twój przedział: 
+        @if (Model.wiadomosc.Equals("waga prawidłowa"))
+        {
+            @Model.wiadomosc <br />
+        }
+        else
+        {
+            <span style="color: red;">@Model.wiadomosc <br /></span>
+        }
+    </div>
+</body>
+</html>

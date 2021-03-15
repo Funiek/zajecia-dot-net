@@ -1,0 +1,63 @@
+﻿@page
+@model PDdotnet2.Pages.KalkulatorModel
+
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator BMI</title>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body>
+    <h2>Kalkulator BMI</h2>
+    <form method="post">
+        <div class="form-text-color">
+        <label asp-for="person.imie"></label>
+        <input asp-for="person.imie" />
+        <span asp-validation-for="person.imie" class="validation"></span>
+        <br />
+        <br />
+        <label asp-for="person.email"></label>
+        <input asp-for="person.email" />
+        <span asp-validation-for="person.email" class="validation"></span>
+        <br />
+        <br />
+        <label asp-for="person.wiek"></label>
+        <input asp-for="person.wiek" />
+        <span asp-validation-for="person.wiek" class="validation"></span>
+        <br />
+        <br />
+        <br />
+        <br />
+        <label asp-for="person.waga"></label>
+        <input asp-for="person.waga" />
+        <span asp-validation-for="person.waga" class="validation"></span>
+        <br />
+        <br />
+        <label asp-for="person.miara">Wybierz jednostke:</label>
+        <select asp-for="person.miara">
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+        </select>
+        <br />
+        <br />
+        <label asp-for="person.wzrost"></label>
+        <input asp-for="person.wzrost" />
+        <span asp-validation-for="person.wzrost" class="validation"></span>
+        <br />
+        <br />
+        <label asp-for="person.plec">Mężczyzna:</label>
+        <input asp-for="person.plec" type="radio" value="Mężczyzna" checked />
+        <label asp-for="person.plec">Kobieta:</label>
+        <input asp-for="person.plec" type="radio" value="Kobieta" />
+        <br />
+        <br />
+        <input type="submit" value="Zatwierdź" />
+        </div>
+    </form>
+</body>
+</html>

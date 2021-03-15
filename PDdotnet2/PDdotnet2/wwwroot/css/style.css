@@ -1,0 +1,36 @@
+﻿body 
+{
+    background-color: dimgrey;
+}
+
+
+.container
+{
+    color: grey;
+}
+
+.footer 
+{
+    background-color: lightcyan;
+}
+
+.header-color {
+    background-color: lightcyan;
+}
+
+h1, h2 {
+    position: center;
+    color: lightblue;
+}
+
+.form-text-color
+{
+    color: white;
+    font-weight: bold;
+}
+
+.validation
+{
+    font-weight: normal;
+    color: red;
+}

@@ -1,0 +1,37 @@
+﻿@page
+@model PDdotnet1.Pages.EqualGreater18Model
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Masz co najmniej 18 lat</title>
+</head>
+<body>
+    <h1>Witaj użytkowniku</h1>
+    Masz co najmniej 18 lat i możesz pracować w naszej firmie! Dziękujemy za zgłoszenie! <br />
+    Twoje dane: <br />
+    Imię: @Model.Imie <br />
+    Nazwisko: @Model.Nazwisko <br />
+    Wiek: @Model.Wiek <br />
+    Płeć: @Model.Plec <br />
+    @if (@Model.Telefon != 0)
+    {
+        @Model.Telefon <br />
+    }
+    else
+    {
+        <div>Brak podanego numeru telefonu <br /></div>
+    }
+
+    @if (@Model.Wiek != 0)
+    {
+        <div>Jezyki programowania <br /></div>
+    }
+
+    @foreach (var item in @Model.JezykiProgramowania)
+    {
+        @item <br />
+    }
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿@page "{firstName}/{lastName}"
+@model Zajecia1.Pages.WelcomeModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <h2>Wprowadziles dane:</h2>
+    Imię: @Model.firstName
+    <br />
+    Nazwisko:
+    @{ 
+        for(int i=0;i<5;i++)
+        {
+            @Model.lastName
+        }
+    }
+</body>
+</html>

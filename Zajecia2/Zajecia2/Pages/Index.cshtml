@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+
+@{ 
+    Layout = null;
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Company</title>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body>
+    <h2>Witaj w naszej firmie</h2>
+    <form method="post">
+        <label asp-for="person.FirstName"></label>
+        <input asp-for="person.FirstName" />
+        <span asp-validation-for="person.FirstName"></span>
+        <br />
+        <label>Nazwisko: <input name="LastName" /></label>
+        <br />
+        <label>Wiek: <input name="Age" /></label>
+        <br />
+        <label>Licencja: <input type="checkbox" name="DrivingLicense" /></label>
+        <br />
+        <input type="submit" value="Zatwierdź" />
+    </form>
+</body>
+</html>

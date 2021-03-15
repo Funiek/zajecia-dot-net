@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Strona głóna</title>
+</head>
+<body>
+    <h1>Witaj użytkowniku</h1>
+    Podaj dane:<br />
+    <form method="post">
+        <input type="text" name="Imie" placeholder="Imię" required/> <br />
+        <input type="text" name="Nazwisko" placeholder="Nazwisko" required/> <br />
+        <input type="text" name="Wiek" placeholder="Wiek" required/> <br />
+        Płeć: <br />
+        <label><input type="radio" name="Plec" value="Mezczyzna" checked/>Mężczyzna</label> <br />
+        <label><input type="radio" name="Plec" value="Kobieta" />Kobieta</label> <br />
+        <label><input type="radio" name="Plec" value="Helikopter Bojowy" />Helikopter Bojowy</label> <br />
+        <input type="text" name="telefon" placeholder="Telefon" /> <br />
+        Języki programowania: <br />
+        <label><input type="checkbox" name="JezykiProgramowania" value="C++" />C++</label> <br />
+        <label><input type="checkbox" name="JezykiProgramowania" value="C#"  />C#</label> <br />
+        <label><input type="checkbox" name="JezykiProgramowania" value="JAVA"  />Java</label> <br />
+        <input type="submit" value="Wyślij" />
+    </form>
+</body>
+</html>
