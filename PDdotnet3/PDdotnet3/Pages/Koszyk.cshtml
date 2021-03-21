@@ -1,0 +1,40 @@
+﻿@page
+@model PDdotnet3.Pages.KoszykModel
+
+@{
+    ViewData["Title"] = "Koszyk";
+}
+
+<!DOCTYPE html>
+<head>
+
+</head>
+
+<body>
+    <h2>Koszyk</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nazwa</th>
+                <th scope="col">Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.cookieList)
+            {
+                <tr>
+                    <th scope="row">@Html.DisplayFor(m => item.id)</th>
+                    <td>@Html.DisplayFor(m => item.name)</td>
+                    <td>@Html.DisplayFor(m => item.price)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <br />
+    <br />
+    <form method="post">
+        <label><input type="submit" value="Usuń" /></label>
+    </form>
+    <a asp-page="List">Powrót</a>
+</body>

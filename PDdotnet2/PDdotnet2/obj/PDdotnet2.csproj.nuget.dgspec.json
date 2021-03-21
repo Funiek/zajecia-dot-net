@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Krzysiek\\source\\repos\\PDdotnet2\\PDdotnet2\\PDdotnet2.csproj": {}
+    "C:\\Users\\ZABA\\Documents\\Repos\\zajecia-dot-net\\PDdotnet2\\PDdotnet2\\PDdotnet2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Krzysiek\\source\\repos\\PDdotnet2\\PDdotnet2\\PDdotnet2.csproj": {
+    "C:\\Users\\ZABA\\Documents\\Repos\\zajecia-dot-net\\PDdotnet2\\PDdotnet2\\PDdotnet2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Krzysiek\\source\\repos\\PDdotnet2\\PDdotnet2\\PDdotnet2.csproj",
+        "projectUniqueName": "C:\\Users\\ZABA\\Documents\\Repos\\zajecia-dot-net\\PDdotnet2\\PDdotnet2\\PDdotnet2.csproj",
         "projectName": "PDdotnet2",
-        "projectPath": "C:\\Users\\Krzysiek\\source\\repos\\PDdotnet2\\PDdotnet2\\PDdotnet2.csproj",
-        "packagesPath": "C:\\Users\\Krzysiek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Krzysiek\\source\\repos\\PDdotnet2\\PDdotnet2\\obj\\",
+        "projectPath": "C:\\Users\\ZABA\\Documents\\Repos\\zajecia-dot-net\\PDdotnet2\\PDdotnet2\\PDdotnet2.csproj",
+        "packagesPath": "C:\\Users\\ZABA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ZABA\\Documents\\Repos\\zajecia-dot-net\\PDdotnet2\\PDdotnet2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Krzysiek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ZABA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

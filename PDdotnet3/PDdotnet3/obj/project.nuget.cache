@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/dk2DP77SKla8ME9fJstbIeYBbBf8/f2LBBHQUdVgJXWHp/uOZ7ZIdcgIznqkkxlfXwtdQ1CMJA7T99b+HjtLw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ZABA\\Documents\\Repos\\zajecia-dot-net\\PDdotnet3\\PDdotnet3\\PDdotnet3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZABA\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

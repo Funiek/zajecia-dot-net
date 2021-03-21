@@ -1,0 +1,22 @@
+﻿@page
+@model PDdotnet3.Pages.EditModel
+@{
+    ViewData["Title"] = "Edycja produktu";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <form method="post">
+        <label asp-for="product.name"></label>
+        <input asp-for="product.name" value="@Model.product.name" /> <br />
+        <label asp-for="product.price"></label>
+        <input asp-for="product.price" value="@Model.product.price" /> <br />
+        <input asp-for="product.id" value="@Model.product.id" type="hidden"/>
+        <label><input type="submit" value="Zakończ" /></label>
+    </form>
+</body>
+</html>

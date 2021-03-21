@@ -1,0 +1,59 @@
+﻿@page
+@model PDdotnet3.Pages.CreateModel
+@{
+    ViewData["Title"] = "Nowy produkt";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+
+        $.validator.methods.range = function (value, element, param) {
+            var globalizedValue = value.replace(",", ".");
+            return this.optional(element) || (globalizedValue >= param[0] && globalizedValue <= param[1]);
+        }
+
+        $.validator.methods.number = function (value, element) {
+            return this.optional(element) || /-?(?:\d+|\d{1,3}(?:[\s\.,]\d{3})+)(?:[\.,]\d+)?$/.test(value);
+        }
+        //Date dd/MM/yyyy
+        $.validator.methods.date = function (value, element) {
+            var date = value.split("/");
+            return this.optional(element) || !/Invalid|NaN/.test(new Date(date[2], date[1], date[0]).toString());
+        }
+    </script>
+</head>
+<body>
+    <h2>Nowy produkt</h2>
+    <br />
+    <br />
+    <div class="container">
+        <form class="form-horizontal" method="post">
+            <div class="form-group">
+                <label asp-for="newProduct.name" class="control-label col-sm2"></label>
+                <div class="col-sm-6">
+                    <input asp-for="newProduct.name" class="form-control">
+                    <span asp-validation-for="newProduct.name"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="newProduct.price" class="control-label col-sm2"></label>
+                <div class="col-sm-6">
+                    <input asp-for="newProduct.price" class="form-control">
+                    <span asp-validation-for="newProduct.price"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn btn-primary">Zatwierdź</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

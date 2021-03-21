@@ -1,0 +1,22 @@
+﻿@page
+@model PDdotnet3.Pages.DetailsModel
+@{
+    ViewData["Title"] = "Szczegóły produktu";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h2>Szczegóły produktu</h2>
+    <span style="font-weight: bold;"> Nazwa produktu: </span> @Model.product.name <br />
+    <span style="font-weight: bold;"> Cena: </span> @Model.product.price <br />
+    <span style="font-weight: bold;"> Id produktu: </span> @Model.product.id <br />
+    <a asp-page="CreateCookieKoszyk" asp-route-id=@Model.product.id>Dodaj do koszyka</a>
+    <form method="post">
+        <label><input type="submit" value="Powrót" /></label>
+    </form>
+</body>
+</html>
