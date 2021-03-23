@@ -20,14 +20,13 @@ namespace PDdotnet3.DAL
             }
             else
             {
-                // products = JsonConvert.DeserializeObject<List<Product>>(jsonProducts);
                 products = JsonSerializer.Deserialize<List<Product>>(jsonProducts);
             }
         }
 
         private int GetNextId()
         {
-            return products[products.Count - 1].id + 1;
+            return (products.Count != 0) ? products[products.Count - 1].id + 1 : 1;
         }
         public void Create(Product p)
         {
@@ -54,8 +53,6 @@ namespace PDdotnet3.DAL
 
         public string Save()
         {
-
-            //return JsonConvert.SerializeObject(products);
             return JsonSerializer.Serialize(products);
         }
         public List<Product> List()
